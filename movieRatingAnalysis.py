@@ -5,7 +5,6 @@ def average(numbersList:list):
     average = sum / len(numbersList)   
     return round(average,2)
 
-
 movies = [
     ("The Shawshank Redemption", 1994, [9, 10, 10, 9, 8, 9]),
     ("The Godfather", 1972, [10, 9, 8, 10, 9, 7]),
