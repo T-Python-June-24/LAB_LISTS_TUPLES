@@ -14,12 +14,13 @@ movies = [
     ("The Room", 2003, [1, 2, 3, 4, 5, 1])
 ]
 
-#Calculating the average of movies ratings
-moviesRatings = [(title, year,average(rating)) for title, year, rating in movies if average(rating)>6]
-print(moviesRatings)
+#Calculating the average of movie ratings
+moviesRatings = [(title, year,average(ratings)) for title, year, ratings in movies if average(ratings)>6]
 
-#Printing the movies analysis.
-i = 1
-for movie in moviesRatings:
-    print(f"{i}. {movie[0]} ({movie[1]}) - Avergae rating: {movie[2]} ★")
+#Sorting the movies by average rating in decending order.
+moviesRatings.sort(key = lambda movie:movie[2],reverse = True)
+
+i=1
+for title, year, avg_ratings in moviesRatings:
+    print(f"{i}. {title} ({year}) - Avergae rating: {avg_ratings} ★")
     i+=1
