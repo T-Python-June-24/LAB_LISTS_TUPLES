@@ -45,10 +45,10 @@ def generate_odd_number_list()-> list: # return a list
     for i in range(1200,2001,125):
             if i % 2 != 0:
                 odd_numbers.append(i)
-    return odd_numbers
+    return odd_numbers  # another solution 
 
 
-generated_odd_list = generate_odd_number_list()
+generated_odd_list = [i for i in range(1200,2001,125) if i % 2 != 0]
 
 print(f" Q3 the odd numbers in list from 1200 to 2000 with 125 steps is = {generated_odd_list}")
 
