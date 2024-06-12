@@ -21,7 +21,7 @@ def average_score(scores:list) -> float:
     Returns:
         The average of the integers
     '''
-    return round(sum(scores) / len(scores), 1)
+    return round(sum(scores) / len(scores), 2)
 
 ### 3. Filters out movies with an average rating lower than 6.0.
 
@@ -46,4 +46,8 @@ def show_filter(shows:list) -> list:
 
 ### 5. Displays the  movies, along with their title,
 ### release year, and average rating.
-print(show_filter(movies))
+filtered_movies = show_filter(movies)
+count = 0
+for movie in filtered_movies:
+    count += 1
+    print(f"{count}. {movie[0]} ({movie[1]}) - Average rating: {movie[2]} ★")
