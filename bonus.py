@@ -8,8 +8,10 @@ movies = [
     ("The Room", 2003, [1, 2, 3, 4, 5, 1])
 ]
 #sort movies in order from 1 to 5???
+#enumerate or for loop and add onw each time
 
-for title, year, ratings in movies:
+for order, (title, year, ratings) in enumerate(movies, start=1):
     avg_rating = sum(ratings) / len(ratings)
     if avg_rating >= 6.0:
-        print(f"{title} ({year}) - Average Rating: {avg_rating:.2f} ★")
+        print(f"{order}. {title} ({year}) - Average Rating: {avg_rating:.2f} ★")
+        
