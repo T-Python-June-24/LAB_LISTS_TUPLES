@@ -9,5 +9,5 @@ movies = [
 
 for i, movie in enumerate(movies):
     average_rating = sum(movie[2])/len(movie[2])
-    print(f"{i+1}. {movie[0]} ({movie[1]}) - Average rating: {average_rating:.2f} *")
-    
+    if average_rating > 6:
+        print(f"{i+1}. {movie[0]} ({movie[1]}) - Average rating: {average_rating:.2f} *")
