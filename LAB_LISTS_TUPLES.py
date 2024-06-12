@@ -1,20 +1,34 @@
-#Q1 calculate the sum of the elements in the list
 list=[2, 3, 4, 5, 15, 1, 43, 20]
+#Q1 calculate the sum of the elements in the list
+
 def list_sum(list):
-  sum:int=0
-  for i in list :
+ '''
+ this function calculate the sum of the elements in a given list
+ Args:
+ list(list) : list given by user 
+Return:
+        sum (int): The sum of all elements in the list
+'''
+ sum:int=0 
+ for i in list : # itrate over each item in the list 
      sum+=i
-  return sum
+ return sum
 #Q2
 def largest_number(list):
-     largest_item=0
-     for i in list:
-        if i>largest_item:
+     '''
+     this function find the largest number in the list was given from the user 
+     Args : 
+      list(list) : list given by user 
+      Return:
+      largest_item(int) : the value of the largest item in the list 
+     '''
+     largest_item: int=0
+     for i in list: #iterate over each number in the list
+        if i>largest_item: 
            largest_item=i
      return largest_item
-# take size of user's list for Q2
-
-list_size=int(input("Enter the number of items you want for the list : "))
+#Q2
+list_size=int(input("Enter the number of items you want for the list : "))# take size of user's list 
 user_list=[] 
 
 #user enters the list values 
