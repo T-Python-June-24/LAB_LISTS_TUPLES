@@ -14,11 +14,14 @@ def average_rating(movies):
     movie(tupel):tuple with movie title , year, rating 
 
     '''
+    i=0
     for movie in movies: # iterate over each movie in the movies tuple
         
         title, year, ratings = movie
         avg_rating = sum(ratings) / len(ratings)
+        
         if avg_rating >= 6.0:
-          print(f"- {title} ({year}) - Average rating: {avg_rating:.2f} ★")
-         
+           i=i+1
+           print(f"{i}- {title} ({year}) - Average rating: {avg_rating:.2f} ★")
+           
 average_rating(movies)
