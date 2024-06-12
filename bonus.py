@@ -10,6 +10,14 @@ movies = [
 
 
 def moveis(movies:list):
+    '''
+    Function displays movies with their title, year of release and average rating.
+    
+    Args:
+        movies (list): List containing movie data
+       
+    
+    '''
     i=1
     for mov in movies:
         rating= sum(mov[2])/ len(mov[2])
