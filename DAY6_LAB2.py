@@ -13,23 +13,32 @@
 
 list1 = [2, 3, 4, 5, 15, 1, 43, 20]
 
-def func1(x:list):
-    list_sum = sum(list1)
-    return list_sum
+# def func1(x:list):
+#     list_sum = sum(list1)
+#     return list_sum
+
+# print("\n#1")
+# print(f"Sum of numbers in the list is:\t {func1(list1)}")
+
+def list_sum(x:list):
+    return sum(list1)
 
 print("\n#1")
-print(f"Sum of numbers in the list is:\t {func1(list1)}")
+print(f"Sum of numbers in the list is:\t {list_sum(list1)}")
 
 
 
 ###2
 
-def func2(x:list):
-    largest_number = max(list1)
-    return largest_number
+# def func2(x:list):
+#     largest_number = max(list1)
+#     return largest_number
+
+def largest_number(x:list):
+    return max(list1)
 
 print("\n#2")
-print(f'Largest # in the list is:\t {func2(list1)}')
+print(f'Largest # in the list is:\t {largest_number(list1)}')
 
 
 
