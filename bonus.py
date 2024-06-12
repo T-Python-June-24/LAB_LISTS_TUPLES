@@ -1,3 +1,5 @@
+# solution of bonus in lab lists and tuples 
+
 movies = [
     ("The Shawshank Redemption", 1994, [9, 10, 10, 9, 8, 9]),
     ("The Godfather", 1972, [10, 9, 8, 10, 9, 7]),
@@ -7,6 +9,22 @@ movies = [
     ("The Room", 2003, [1, 2, 3, 4, 5, 1])
 ]
 
-for i, movie in enumerate(movies):
-    average_rating = sum(movie[2])/len(movie[2])
-    print(f"{i+1}. {movie[0]} ({movie[1]}) - Average rating: {average_rating:.2f} *")
+# calculating the average rating for each movie 
+
+'''
+for raw in range(len(movies)):
+    for colunm in movies:
+        print(movies[raw])
+
+'''
+
+for rate in movies:
+        rating= sum(rate[2])/ len(rate[2])
+        print(f"Movie : {rate[0]}, release year : ({rate[1]}) - Avergae rating: {round(rating,2)}")
+        
+
+#Filters out movies with an average rating lower than 6.0
+
+#Displays the movies, along with their title, release year, and average rating.
+
+
