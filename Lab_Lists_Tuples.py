@@ -6,9 +6,12 @@ def return_sum(one):
 def largest(given_list):
     return max(given_list)
 
+#this is my odd number list
 odd_numbers = [num for num in range(1200, 2001, 125)]
 
 new_list = odd_numbers[:5]
+
+
 
 print("Sum:", return_sum(given_list))
 print("Largest number:", largest(given_list))
