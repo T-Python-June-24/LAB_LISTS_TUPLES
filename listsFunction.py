@@ -18,19 +18,12 @@ largestNo(list1)
 
 '''that was the largest number in the list'''
 
-z=[]
-def OddNo (z):
-    for i in range(120,2000,125):
-        if i%2 == 1:
-            z.append(i)
-    print("The desired Odd Numbers list is ",z)
-    #print("The sliced list is ",z[0:5])
-
-OddNo(z)
+z=[x for x in range(1200,2000,125) if x%2==1]
+print("The requested list is: ",z)
 
 '''That was a list of odd numbers with steps of 125 within a range'''
 
 SlicedL = z[0:5]
-print(SlicedL)
+print("The sliced list is: ",SlicedL)
 
 '''That was a sliced list'''
