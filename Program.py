@@ -22,7 +22,7 @@ print(largestNumber(ListOfnumber))
 # Q3 ---------------------------------------------
 
 numbers = [i for i in  range(1200, 2000, 125)]
-# Use list comprehension to filter out odd numbers
+# Use list comprehension to filter out odd  numbers
 odd_numbers = [num for num in numbers if num % 2 != 0]
 
 print(odd_numbers)
