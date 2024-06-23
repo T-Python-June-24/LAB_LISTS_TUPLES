@@ -1,13 +1,13 @@
 # Q1 ---------------------------------------------
 def sumOfNumbers (list: int) -> int: 
-    ''' '''
+    '''This function is for returns  the sum  of numbers'''
     if not list:
         return print("List is empty")
     return sum(list)
 
 # Q2 ---------------------------------------------
 def largestNumber (list: int) -> int:
-    ''' '''
+    ''' This function is for return largest number'''
     if not list:
         return print("There is no list")
     return max(list)
@@ -28,6 +28,6 @@ odd_numbers = [num for num in numbers if num % 2 != 0]
 print(odd_numbers)
 # Q4 ---------------------------------------------
 
-new_list = numbers[:5]
-print (new_list)
+odd_numbers = odd_numbers[:5].copy()
+print (odd_numbers)
 
