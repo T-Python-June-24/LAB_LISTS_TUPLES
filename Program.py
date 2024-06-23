@@ -30,4 +30,3 @@ print(odd_numbers)
 
 odd_numbers = odd_numbers[:5].copy()
 print (odd_numbers)
-
