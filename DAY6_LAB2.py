@@ -44,14 +44,20 @@ print(f'Largest # in the list is:\t {largest_number(list1)}')
 
 ###3
 
-odd_numbers = []
+# odd_numbers = []
 
-for x in range(1200, 2000, 125):
-    if x %2 != 0:
-        odd_numbers.append(x)
+# for x in range(1200, 2000, 125):
+#     if x %2 != 0:
+#         odd_numbers.append(x)
+
+# print("\n#3")
+# print(odd_numbers)
+
+odd_numbers = [x for x in range(1200, 2000, 125) if x % 2 != 0]
 
 print("\n#3")
 print(odd_numbers)
+
 
 
 
